@@ -18,8 +18,7 @@
 <body>
     <script>
         let grammar;
-        let outputText = "";
-        let x, y;
+        let particles = [];
 
         function preload() {
             $.getJSON("grammar2.json", function(data) {
@@ -32,20 +31,32 @@
         function setup() {
             createCanvas(windowWidth, windowHeight);
             textAlign(CENTER, CENTER);
-            textSize(5);
+            textSize(24);
         }
 
         function draw() {
             background(0);
             fill(255);
-            text(outputText, x, y);
+
+            for (let i = particles.length - 1; i >= 0; i--) {
+                let p = particles[i];
+                text(p.text, p.x, p.y);
+                p.y += p.speed; // Make text fall at a random speed
+
+                if (p.y > height) {
+                    particles.splice(i, 1); // Remove particles that have fallen off the screen
+                }
+            }
         }
 
         function generateText() {
             if (grammar) {
-                outputText = grammar.flatten("#origin#");
-                x = random(width);
-                y = random(height);
+                let outputText = grammar.flatten("#origin#");
+                let x = random(width);
+                let y = 0; // Start at the top of the canvas
+                let speed = random(1, 5); // Random falling speed
+
+                particles.push({ text: outputText, x: x, y: y, speed: speed });
             }
         }
 
