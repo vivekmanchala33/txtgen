@@ -40,11 +40,17 @@
 
             for (let i = particles.length - 1; i >= 0; i--) {
                 let p = particles[i];
-                text(p.text, p.x, p.y);
-                p.y += p.speed; // Make text fall at a random speed
+                textWrap(WORD);
+                text(p.text, p.x, p.y, 200); // Multiline text with a width limit
+                p.x += p.vx;
+                p.y += p.vy;
 
-                if (p.y > height) {
-                    particles.splice(i, 1); // Remove particles that have fallen off the screen
+                // Bounce off the walls
+                if (p.x < 0 || p.x > width - 200) {
+                    p.vx *= -1;
+                }
+                if (p.y < 0 || p.y > height - 50) {
+                    p.vy *= -1;
                 }
             }
         }
@@ -52,11 +58,12 @@
         function generateText() {
             if (grammar) {
                 let outputText = grammar.flatten("#origin#");
-                let x = random(width);
-                let y = 0; // Start at the top of the canvas
-                let speed = random(1, 5); // Random falling speed
+                let x = random(width - 200);
+                let y = random(height - 50);
+                let vx = random(2, 5) * (random() > 0.5 ? 1 : -1);
+                let vy = random(2, 5) * (random() > 0.5 ? 1 : -1);
 
-                particles.push({ text: outputText, x: x, y: y, speed: speed });
+                particles.push({ text: outputText, x: x, y: y, vx: vx, vy: vy });
             }
         }
 
