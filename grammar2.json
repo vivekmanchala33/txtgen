@@ -1,137 +1,94 @@
 {
     "origin": [
-        "#intro# #conflict# #twist# #resolution#"
+        "#intro#",
+        "#conflict#",
+        "#twist#",
+        "#resolution#"
     ],
     "intro": [
-        "A #adjective# #noun_character# stood upon the #noun_ship# gazing into the #noun_ocean#.",
-        "Through the #adjective# mist, the #noun_whale# surfaced, its #noun_feature# glistening.",
-        "The #adjective# crew prepared their #noun_weapon# as the #noun_whale# approached."
+        "A #adjective# #noun# stood on the #noun# gazing into the #noun#.",
+        "Through the #adjective# mist, the #noun# appeared, its #noun# glistening.",
+        "The #adjective# crew prepared their #noun# as the #noun# loomed closer."
     ],
     "conflict": [
-        "The #noun_character# #verb_action# the #noun_whale#, but the sea was #adjective#.",
-        "A sudden #noun_event# caused the #noun_ship# to #verb_motion# wildly.",
-        "The #adjective# storm threatened to #verb_disaster# the entire crew."
+        "The #noun# #verb# the #noun#, but the sea was #adjective#.",
+        "A sudden #noun# caused the #noun# to #verb# violently.",
+        "The #adjective# storm threatened to #verb# the entire crew."
     ],
     "twist": [
-        "But the #noun_whale# was not what it seemed—it was #adjective# and full of #noun_mystery#.",
-        "The #noun_character# uncovered a #noun_secret# hidden within the #noun_ship#.",
-        "A message from the #noun_past# revealed the truth about the #noun_whale#."
+        "But the #noun# was not what it seemed—it was #adjective# and full of #noun#.",
+        "The #noun# uncovered a #noun# hidden within the #noun#.",
+        "A message from the #noun# revealed the truth about the #noun#."
     ],
     "resolution": [
-        "In the end, the #noun_character# #verb_fate# the #noun_whale# and found #noun_redemption#.",
-        "The sea, now #adjective#, carried the #noun_ship# back home.",
-        "The #noun_whale# disappeared into the #noun_ocean#, leaving only #noun_legend# behind."
+        "In the end, the #noun# #verb# the #noun# and found #noun#.",
+        "The sea, now #adjective#, carried the #noun# back home.",
+        "The #noun# disappeared into the #noun#, leaving only #noun# behind."
     ],
-    "noun_character": [
-        "Captain",
-        "Harpooner",
-        "Sailor",
-        "Ahab",
-        "Ishmael"
-    ],
-    "noun_ship": [
-        "Pequod",
-        "Deck",
-        "Forecastle",
-        "Mast",
-        "Cabin"
-    ],
-    "noun_ocean": [
-        "sea",
-        "waves",
-        "current",
+    "noun": [
+        "ship",
+        "whale",
+        "captain",
         "storm",
-        "horizon"
-    ],
-    "noun_whale": [
-        "leviathan",
-        "Moby Dick",
-        "sperm whale",
-        "beast",
-        "giant"
-    ],
-    "noun_feature": [
-        "eye",
-        "fin",
-        "tail",
-        "blowhole",
-        "scar"
-    ],
-    "noun_weapon": [
+        "ocean",
+        "crew",
+        "deck",
         "harpoon",
-        "spear",
-        "rope",
-        "dagger",
-        "lance"
-    ],
-    "noun_event": [
+        "voyage",
+        "beast",
         "wave",
-        "maelstrom",
+        "sailor",
+        "mast",
+        "horizon",
+        "voyager",
         "gale",
-        "squall",
-        "tempest"
-    ],
-    "noun_secret": [
-        "map",
-        "journal",
-        "letter",
-        "symbol",
-        "whisper"
-    ],
-    "noun_past": [
-        "ghost",
+        "current",
         "legend",
-        "curse",
-        "memory",
-        "prophecy"
+        "abyss",
+        "depths"
     ],
-    "noun_redemption": [
-        "peace",
-        "forgiveness",
-        "fate",
-        "destiny",
-        "truth"
-    ],
-    "noun_legend": [
-        "story",
-        "myth",
-        "song",
-        "rumor",
-        "echo"
+    "verb": [
+        "sailed",
+        "hunted",
+        "chased",
+        "plunged",
+        "capsized",
+        "fled",
+        "engulfed",
+        "vanished",
+        "roared",
+        "surged",
+        "wrecked",
+        "collapsed",
+        "drowned",
+        "glided",
+        "rescued",
+        "collided",
+        "swallowed",
+        "tumbled",
+        "drifted",
+        "erupted"
     ],
     "adjective": [
         "ominous",
         "furious",
-        "haunted",
         "endless",
-        "relentless"
-    ],
-    "verb_action": [
-        "chased",
-        "hunted",
-        "tracked",
-        "battled",
-        "feared"
-    ],
-    "verb_motion": [
-        "rocked",
-        "tilted",
-        "capsized",
-        "lurched",
-        "plunged"
-    ],
-    "verb_disaster": [
-        "swallow",
-        "engulf",
-        "consume",
-        "shatter",
-        "doom"
-    ],
-    "verb_fate": [
-        "confronted",
-        "defeated",
-        "embraced",
-        "understood",
-        "lost"
+        "relentless",
+        "haunted",
+        "shadowy",
+        "foreboding",
+        "mystical",
+        "raging",
+        "gloomy",
+        "thunderous",
+        "ferocious",
+        "tempestuous",
+        "howling",
+        "whirling",
+        "dark",
+        "chilling",
+        "surging",
+        "savage",
+        "formidable"
     ]
 }
