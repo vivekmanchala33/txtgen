@@ -19,12 +19,18 @@
     <script>
         let grammar;
         let particles = [];
+        let showIntro = true;
+        let introText = "This was created by Vivek Manchala. The words are from Moby-Dick by Herman Melville and Simple Sabotage Field Manual by the United States Office of Strategic Services, sourced from Project Gutenberg.";
+        let introTimer;
 
         function preload() {
             $.getJSON("grammar2.json", function(data) {
                 grammar = tracery.createGrammar(data);
-                generateText();
-                setInterval(generateText, 1500);
+                introTimer = setTimeout(() => {
+                    showIntro = false;
+                    generateText();
+                    setInterval(generateText, 1500);
+                }, 3000); // Show intro for 3 seconds
             });
         }
 
@@ -37,6 +43,12 @@
         function draw() {
             background(0);
             fill(255);
+            
+            if (showIntro) {
+                textWrap(WORD);
+                text(introText, width / 2 - 200, height / 2 - 50, 400);
+                return;
+            }
 
             for (let i = particles.length - 1; i >= 0; i--) {
                 let p = particles[i];
@@ -73,5 +85,3 @@
     </script>
 </body>
 </html>
-
-
