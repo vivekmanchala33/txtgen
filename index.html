@@ -36,21 +36,28 @@
 
         function draw() {
             background(0);
-            fill(255);
 
             for (let i = particles.length - 1; i >= 0; i--) {
                 let p = particles[i];
+                fill(p.color);
                 textWrap(WORD);
                 text(p.text, p.x, p.y, 200); // Multiline text with a width limit
                 p.x += p.vx;
                 p.y += p.vy;
 
-                // Bounce off the walls
+                // Bounce off the walls and count bounces
                 if (p.x < 0 || p.x > width - 200) {
                     p.vx *= -1;
+                    p.bounces++;
                 }
                 if (p.y < 0 || p.y > height - 50) {
                     p.vy *= -1;
+                    p.bounces++;
+                }
+
+                // Remove particle after 5 bounces
+                if (p.bounces >= 5) {
+                    particles.splice(i, 1);
                 }
             }
         }
@@ -62,8 +69,9 @@
                 let y = random(height - 50);
                 let vx = random(2, 5) * (random() > 0.5 ? 1 : -1);
                 let vy = random(2, 5) * (random() > 0.5 ? 1 : -1);
-
-                particles.push({ text: outputText, x: x, y: y, vx: vx, vy: vy });
+                let color = color(random(255), random(255), random(255));
+                
+                particles.push({ text: outputText, x: x, y: y, vx: vx, vy: vy, color: color, bounces: 0 });
             }
         }
 
