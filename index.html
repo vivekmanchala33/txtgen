@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracery + P5.js Example</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="p5.min.js"></script>
+    <script src="tracery.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let grammar;
+        let outputText = "";
+        let x, y;
+
+        function preload() {
+            $.getJSON("grammar2.json", function(data) {
+                grammar = tracery.createGrammar(data);
+                generateText();
+                setInterval(generateText, 1500);
+            });
+        }
+
+        function setup() {
+            createCanvas(windowWidth, windowHeight);
+            textAlign(CENTER, CENTER);
+            textSize(24);
+        }
+
+        function draw() {
+            background(0);
+            fill(255);
+            text(outputText, x, y);
+        }
+
+        function generateText() {
+            if (grammar) {
+                outputText = grammar.flatten("#origin#");
+                x = random(width);
+                y = random(height);
+            }
+        }
+
+        function windowResized() {
+            resizeCanvas(windowWidth, windowHeight);
+        }
+    </script>
+</body>
+</html>
