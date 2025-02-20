@@ -3,342 +3,135 @@
         "#intro# #conflict# #twist# #resolution#"
     ],
     "intro": [
-        "In the age of the #NounElection#, a #AdjDiplomatic# leader rose to power, promising to reshape the world.",
-        "As the #NounCrisis# unfolded, a lone #NounDiplomacy# envoy embarked on a dangerous mission.",
-        "Amidst the turmoil of the #NounConflict#, a secret about the ancient #NounLegislation# was uncovered.",
-        "Legends spoke of a #NounTechnology# capable of ending the #NounClimate# disaster forever."
+        "A #adjective# #noun_character# stood upon the #noun_ship# gazing into the #noun_ocean#.",
+        "Through the #adjective# mist, the #noun_whale# surfaced, its #noun_feature# glistening.",
+        "The #adjective# crew prepared their #noun_weapon# as the #noun_whale# approached."
     ],
     "conflict": [
-        "But when the #NounPolicy# was enacted, it sparked a wave of #NounProtest# across the land.",
-        "However, a group of #AdjPartisan# rebels sought to #VerbMobilize# against the ruling #NounLegislation#.",
-        "Yet the kingdom\u2019s #NounSecurity# forces moved swiftly to #VerbRepress# the growing dissent.",
-        "Meanwhile, a #AdjTechnological# breakthrough in #NounArtificialIntelligence# threatened to change the balance of power forever."
+        "The #noun_character# #verb_action# the #noun_whale#, but the sea was #adjective#.",
+        "A sudden #noun_event# caused the #noun_ship# to #verb_motion# wildly.",
+        "The #adjective# storm threatened to #verb_disaster# the entire crew."
     ],
     "twist": [
-        "Secretly, a faction of #NounTrade# merchants had been conspiring to #VerbFund# the opposition.",
-        "In an unexpected turn, the #NounSanction# intended to weaken the rebels only fueled their cause.",
-        "The ancient #NounLegislation# was revealed to be part of a grand deception orchestrated by the #NounMedia#.",
-        "Just as hope seemed lost, an outlaw scholar of #NounEnergy# discovered a hidden way to #VerbMediate# peace."
+        "But the #noun_whale# was not what it seemed—it was #adjective# and full of #noun_mystery#.",
+        "The #noun_character# uncovered a #noun_secret# hidden within the #noun_ship#.",
+        "A message from the #noun_past# revealed the truth about the #noun_whale#."
     ],
     "resolution": [
-        "With cunning and #AdjGeopolitical# strategy, the #NounDiplomacy# envoy brokered a fragile peace.",
-        "In a final act of defiance, the rebels managed to #VerbSurveil# the rulers and expose the truth.",
-        "At the last moment, a forbidden #NounSocialMovement# rose, changing the course of history forever.",
-        "And so, the land was forever altered, though whispers of #NounExtremism# and #NounScandal# loomed on the horizon."
+        "In the end, the #noun_character# #verb_fate# the #noun_whale# and found #noun_redemption#.",
+        "The sea, now #adjective#, carried the #noun_ship# back home.",
+        "The #noun_whale# disappeared into the #noun_ocean#, leaving only #noun_legend# behind."
     ],
-    "NounElection": [
-        "election",
-        "referendum",
-        "council",
-        "monarchy",
-        "regime"
+    "noun_character": [
+        "Captain",
+        "Harpooner",
+        "Sailor",
+        "Ahab",
+        "Ishmael"
     ],
-    "NounPolicy": [
-        "law",
-        "doctrine",
-        "charter",
-        "manifesto",
-        "treaty"
+    "noun_ship": [
+        "Pequod",
+        "Deck",
+        "Forecastle",
+        "Mast",
+        "Cabin"
     ],
-    "NounProtest": [
-        "rebellion",
-        "uprising",
-        "strike",
-        "march",
-        "boycott"
-    ],
-    "NounCrisis": [
-        "catastrophe",
-        "collapse",
-        "turmoil",
-        "meltdown",
-        "disaster"
-    ],
-    "NounDiplomacy": [
-        "negotiation",
-        "accord",
-        "alliance",
-        "mediation",
-        "treaty"
-    ],
-    "NounLegislation": [
-        "constitution",
-        "bill",
-        "mandate",
-        "statute",
-        "edict"
-    ],
-    "NounSanction": [
-        "embargo",
-        "penalty",
-        "restriction",
-        "ban",
-        "blockade"
-    ],
-    "NounConflict": [
-        "war",
-        "siege",
-        "clash",
-        "dispute",
-        "feud"
-    ],
-    "NounTechnology": [
-        "machine",
-        "algorithm",
-        "device",
-        "system",
-        "program"
-    ],
-    "NounEconomy": [
-        "market",
-        "currency",
-        "trade",
-        "industry",
-        "commerce"
-    ],
-    "NounClimate": [
+    "noun_ocean": [
+        "sea",
+        "waves",
+        "current",
         "storm",
-        "drought",
-        "flood",
-        "wildfire",
-        "heatwave"
+        "horizon"
     ],
-    "NounSecurity": [
-        "militia",
-        "guard",
-        "spies",
-        "watchmen",
-        "enforcers"
+    "noun_whale": [
+        "leviathan",
+        "Moby Dick",
+        "sperm whale",
+        "beast",
+        "giant"
     ],
-    "NounMigration": [
-        "exodus",
-        "flight",
-        "diaspora",
-        "refugees",
-        "displacement"
+    "noun_feature": [
+        "eye",
+        "fin",
+        "tail",
+        "blowhole",
+        "scar"
     ],
-    "NounMedia": [
-        "newspaper",
-        "broadcast",
-        "report",
+    "noun_weapon": [
+        "harpoon",
+        "spear",
+        "rope",
+        "dagger",
+        "lance"
+    ],
+    "noun_event": [
+        "wave",
+        "maelstrom",
+        "gale",
+        "squall",
+        "tempest"
+    ],
+    "noun_secret": [
+        "map",
         "journal",
-        "platform"
+        "letter",
+        "symbol",
+        "whisper"
     ],
-    "NounHealthcare": [
-        "hospital",
-        "clinic",
-        "plague",
-        "remedy",
-        "vaccine"
+    "noun_past": [
+        "ghost",
+        "legend",
+        "curse",
+        "memory",
+        "prophecy"
     ],
-    "NounArtificialIntelligence": [
-        "robot",
-        "neural net",
-        "sentience",
-        "automaton",
-        "cyborg"
+    "noun_redemption": [
+        "peace",
+        "forgiveness",
+        "fate",
+        "destiny",
+        "truth"
     ],
-    "NounEnergy": [
-        "power",
-        "fuel",
-        "reactor",
-        "grid",
-        "generator"
+    "noun_legend": [
+        "story",
+        "myth",
+        "song",
+        "rumor",
+        "echo"
     ],
-    "NounSocialMovement": [
-        "reform",
-        "crusade",
-        "resistance",
-        "campaign",
-        "wave"
+    "adjective": [
+        "ominous",
+        "furious",
+        "haunted",
+        "endless",
+        "relentless"
     ],
-    "NounScandal": [
-        "cover-up",
-        "corruption",
-        "affair",
-        "leak",
-        "bribery"
+    "verb_action": [
+        "chased",
+        "hunted",
+        "tracked",
+        "battled",
+        "feared"
     ],
-    "NounTrade": [
-        "barter",
-        "commerce",
-        "export",
-        "marketplace",
-        "smuggling"
+    "verb_motion": [
+        "rocked",
+        "tilted",
+        "capsized",
+        "lurched",
+        "plunged"
     ],
-    "NounCensorship": [
-        "blacklist",
-        "redaction",
-        "gag order",
-        "firewall",
-        "restriction"
+    "verb_disaster": [
+        "swallow",
+        "engulf",
+        "consume",
+        "shatter",
+        "doom"
     ],
-    "NounHousing": [
-        "tenement",
-        "slum",
-        "manor",
-        "fortress",
-        "settlement"
-    ],
-    "NounExtremism": [
-        "radicalism",
-        "sect",
-        "militancy",
-        "faction",
-        "cult"
-    ],
-    "VerbGovern": [
-        "rule",
-        "lead",
-        "command",
-        "administer",
-        "dominate"
-    ],
-    "VerbLegislate": [
-        "decree",
-        "enact",
-        "establish",
-        "draft",
-        "repeal"
-    ],
-    "VerbSanction": [
-        "ban",
-        "restrict",
-        "fine",
-        "penalize",
-        "blacklist"
-    ],
-    "VerbProtest": [
-        "march",
-        "resist",
-        "demonstrate",
-        "oppose",
-        "riot"
-    ],
-    "VerbRegulate": [
-        "control",
-        "moderate",
-        "supervise",
-        "standardize",
-        "restrict"
-    ],
-    "VerbNegotiate": [
-        "bargain",
-        "compromise",
-        "mediate",
-        "reconcile",
-        "settle"
-    ],
-    "VerbSurveil": [
-        "monitor",
-        "spy",
-        "track",
-        "observe",
-        "investigate"
-    ],
-    "VerbCensor": [
-        "redact",
-        "suppress",
-        "block",
-        "erase",
-        "ban"
-    ],
-    "VerbMediate": [
-        "resolve",
-        "arbitrate",
-        "intervene",
-        "moderate",
-        "settle"
-    ],
-    "VerbMobilize": [
-        "organize",
-        "assemble",
-        "deploy",
-        "stir",
-        "galvanize"
-    ],
-    "VerbRepress": [
-        "quell",
-        "silence",
-        "subdue",
-        "crush",
-        "oppress"
-    ],
-    "VerbFund": [
-        "finance",
-        "support",
-        "subsidize",
-        "endow",
-        "invest"
-    ],
-    "AdjDiplomatic": [
-        "tactful",
-        "negotiable",
-        "strategic",
-        "peaceful",
-        "conciliatory"
-    ],
-    "AdjLegislative": [
-        "statutory",
-        "governmental",
-        "constitutional",
-        "legal",
-        "official"
-    ],
-    "AdjEconomic": [
-        "financial",
-        "commercial",
-        "monetary",
-        "market-driven",
-        "capitalist"
-    ],
-    "AdjGeopolitical": [
-        "global",
-        "territorial",
-        "sovereign",
-        "diplomatic",
-        "international"
-    ],
-    "AdjEnvironmental": [
-        "sustainable",
-        "green",
-        "ecological",
-        "conservationist",
-        "natural"
-    ],
-    "AdjTechnological": [
-        "innovative",
-        "futuristic",
-        "digital",
-        "automated",
-        "cybernetic"
-    ],
-    "AdjPartisan": [
-        "biased",
-        "sectarian",
-        "divisive",
-        "politicized",
-        "ideological"
-    ],
-    "AdjAuthoritarian": [
-        "oppressive",
-        "dictatorial",
-        "totalitarian",
-        "despotic",
-        "repressive"
-    ],
-    "AdjInflationary": [
-        "price-rising",
-        "devaluing",
-        "costly",
-        "unsustainable",
-        "volatile"
-    ],
-    "AdjSanctioned": [
-        "restricted",
-        "penalized",
-        "boycotted",
-        "embargoed",
-        "blacklisted"
+    "verb_fate": [
+        "confronted",
+        "defeated",
+        "embraced",
+        "understood",
+        "lost"
     ]
 }
