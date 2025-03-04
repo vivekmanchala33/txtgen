@@ -19,11 +19,13 @@
     <script>
         let grammar;
         let particles = [];
+        let rockets = [];
         let showIntro = true;
         let introText = "This was created by Vivek Manchala. The words are from Moby-Dick by Herman Melville and Simple Sabotage Field Manual by the United States Office of Strategic Services, sourced from Project Gutenberg.";
         let introTimer;
         let fonts = ["Arial", "Courier New", "Georgia", "Times New Roman", "Verdana"];
         let bgColor = 0; // Start with black background
+        let rocketSVG;
 
         function preload() {
             $.getJSON("grammar2.json", function(data) {
@@ -32,8 +34,11 @@
                     showIntro = false;
                     generateText();
                     setInterval(generateText, 1500);
+                    setInterval(generateRocket, 2000);
                 }, 3000); // Show intro for 3 seconds
             });
+            
+            rocketSVG = loadImage("https://upload.wikimedia.org/wikipedia/commons/3/3a/SpaceX_Falcon_9.svg");
         }
 
         function setup() {
@@ -62,7 +67,7 @@
                 p.x += p.vx;
                 p.y += p.vy;
 
-                // Bounce off the walls and change color, font, and size
+                // Bounce off the walls and change properties
                 if (p.x < 0 || p.x > width - 200) {
                     p.vx *= -1;
                     p.color = color(random(255), random(255), random(255));
@@ -74,6 +79,22 @@
                     p.color = color(random(255), random(255), random(255));
                     p.font = random(fonts);
                     p.size = random(16, 48); // Random font size between small and big
+                }
+            }
+
+            // Draw and update rockets
+            for (let i = rockets.length - 1; i >= 0; i--) {
+                let r = rockets[i];
+                image(rocketSVG, r.x, r.y, 50, 100);
+                r.x += r.vx;
+                r.y += r.vy;
+                
+                // Bounce off walls
+                if (r.x < 0 || r.x > width - 50) {
+                    r.vx *= -1;
+                }
+                if (r.y < 0 || r.y > height - 100) {
+                    r.vy *= -1;
                 }
             }
         }
@@ -95,6 +116,15 @@
 
                 particles.push({ text: outputText, x: x, y: y, vx: vx, vy: vy, color: colorValue, font: fontValue, size: sizeValue });
             }
+        }
+
+        function generateRocket() {
+            let x = random(width - 50);
+            let y = random(height - 100);
+            let vx = random(3, 6) * (random() > 0.5 ? 1 : -1);
+            let vy = random(3, 6) * (random() > 0.5 ? 1 : -1);
+            
+            rockets.push({ x: x, y: y, vx: vx, vy: vy });
         }
 
         function windowResized() {
