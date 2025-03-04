@@ -23,6 +23,7 @@
         let introText = "This was created by Vivek Manchala. The words are from Moby-Dick by Herman Melville and Simple Sabotage Field Manual by the United States Office of Strategic Services, sourced from Project Gutenberg.";
         let introTimer;
         let fonts = ["Arial", "Courier New", "Georgia", "Times New Roman", "Verdana"];
+        let bgColor = 0; // Start with black background
 
         function preload() {
             $.getJSON("grammar2.json", function(data) {
@@ -42,8 +43,8 @@
         }
 
         function draw() {
-            background(0);
-            fill(255);
+            background(bgColor);
+            fill(bgColor === 0 ? 255 : 0); // Invert text color based on background
             
             if (showIntro) {
                 textWrap(WORD);
@@ -72,6 +73,10 @@
                     p.font = random(fonts);
                 }
             }
+        }
+
+        function mousePressed() {
+            bgColor = bgColor === 0 ? 255 : 0; // Toggle between black and white background
         }
 
         function generateText() {
