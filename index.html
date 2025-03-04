@@ -39,7 +39,6 @@
         function setup() {
             createCanvas(windowWidth, windowHeight);
             textAlign(CENTER, CENTER);
-            textSize(24);
         }
 
         function draw() {
@@ -48,6 +47,7 @@
             
             if (showIntro) {
                 textWrap(WORD);
+                textSize(24);
                 text(introText, width / 2 - 200, height / 2 - 50, 400);
                 return;
             }
@@ -56,21 +56,24 @@
                 let p = particles[i];
                 fill(p.color);
                 textFont(p.font);
+                textSize(p.size);
                 textWrap(WORD);
                 text(p.text, p.x, p.y, 200); // Multiline text with a width limit
                 p.x += p.vx;
                 p.y += p.vy;
 
-                // Bounce off the walls and change color and font
+                // Bounce off the walls and change color, font, and size
                 if (p.x < 0 || p.x > width - 200) {
                     p.vx *= -1;
                     p.color = color(random(255), random(255), random(255));
                     p.font = random(fonts);
+                    p.size = random(16, 48); // Random font size between small and big
                 }
                 if (p.y < 0 || p.y > height - 50) {
                     p.vy *= -1;
                     p.color = color(random(255), random(255), random(255));
                     p.font = random(fonts);
+                    p.size = random(16, 48); // Random font size between small and big
                 }
             }
         }
@@ -88,8 +91,9 @@
                 let vy = random(2, 5) * (random() > 0.5 ? 1 : -1);
                 let colorValue = color(random(255), random(255), random(255));
                 let fontValue = random(fonts);
+                let sizeValue = random(16, 48); // Random font size between small and big
 
-                particles.push({ text: outputText, x: x, y: y, vx: vx, vy: vy, color: colorValue, font: fontValue });
+                particles.push({ text: outputText, x: x, y: y, vx: vx, vy: vy, color: colorValue, font: fontValue, size: sizeValue });
             }
         }
 
